@@ -16,7 +16,7 @@ const db = `mongodb+srv://reda42:${process.env.DATABASE_PASS}@cluster0.dqn8fht.m
 // const db = `mongodb://reda42:${process.env.DATABASE_PASS}@ac-uunlnw5-shard-00-00.dqn8fht.mongodb.net:27017,ac-uunlnw5-shard-00-01.dqn8fht.mongodb.net:27017,ac-uunlnw5-shard-00-02.dqn8fht.mongodb.net:27017/?ssl=true&replicaSet=atlas-muvecw-shard-0&authSource=admin&retryWrites=true&w=majority`;
 mongoose
   .connect(db, {
-    useNewUrlParser: true,
+    useNewUrlParser: true, ///????
   })
   .then(() => console.log("MongoDB connected..."));
 // .catch((err) => console.log(err));
