@@ -44,6 +44,5 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         context: ./frontend
-        image: achnitreda/MarhabaFood
         push: true
-        tags: user/app:latest
+        tags: achnitreda/fmarhabafood:latest
